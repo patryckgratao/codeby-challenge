@@ -7,6 +7,7 @@ export const ButtonContainer = styled.div`
   outline: none;
   border: none;
   width: 100%;
+  cursor: pointer;
 `;
 
 export const ButtonText = styled.span`

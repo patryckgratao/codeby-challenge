@@ -4,7 +4,7 @@ import { ButtonContainer, ButtonText } from "./Button.styles";
 const Button = ({ text, color }) => {
   const handleClick = (e) => {
     e.preventDefault();
-    console.log("Mandou enviar => ");
+    console.log("Mandou enviar");
   };
 
   return (
