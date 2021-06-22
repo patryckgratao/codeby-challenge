@@ -7,8 +7,8 @@ import Routes from "./routes";
 function App() {
   return (
     <Router>
-      <GlobalStyle />
       <Routes />
+      <GlobalStyle />
     </Router>
   );
 }

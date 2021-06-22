@@ -5,6 +5,7 @@ export const Container = styled.div`
   display: flex;
   align-items: center;
   justify-content: space-around;
+  margin: 0.8rem 0;
 `;
 
 export const MessageContainer = styled.div`
@@ -15,6 +16,5 @@ export const MessageContainer = styled.div`
 
 export const Text = styled.span`
   color: #217A09;
-  font-family: 'Poppins', sans-serif;
-  font-weight: bold;
+  /* font-weight: bold; */
 `;
