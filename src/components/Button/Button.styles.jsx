@@ -2,8 +2,8 @@ import styled from "styled-components";
 
 export const ButtonContainer = styled.div`
   background: ${(props) => props.color || "#3B74F2"};
-  padding: 1rem;
-  border-radius: 5px;
+  padding: 0.8rem 0;
+  border-radius: 10px;
   outline: none;
   border: none;
   width: 100%;
