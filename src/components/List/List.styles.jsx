@@ -46,3 +46,11 @@ export const OriginalPrice = styled.div`
 export const NewPrice = styled.div`
   color: #202020;
 `;
+
+export const ErrorMessage = styled(Container)`
+  text-align: center;
+  color: #ff647c;
+  margin: 1rem 0;
+  font-size: 1rem;
+  padding-bottom: 1.5rem;
+`;

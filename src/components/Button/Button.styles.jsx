@@ -1,6 +1,12 @@
 import styled from "styled-components";
 
-export const ButtonContainer = styled.div`
+export const Container = styled.div`
+  display: flex;
+  border-top: 2px solid #cacaca;
+`;
+
+export const FullButton = styled.div`
+  margin-top: 1.5rem;
   background: ${(props) => props.color || "#3B74F2"};
   padding: 0.7rem 0;
   border-radius: 8px;
@@ -15,5 +21,5 @@ export const ButtonText = styled.span`
   color: #ffffff;
   font-size: 1.2rem;
   font-weight: bold;
-  font-family: 'Poppins';
+  font-family: "Poppins";
 `;

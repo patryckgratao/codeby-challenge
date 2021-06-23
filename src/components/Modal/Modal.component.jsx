@@ -1,9 +1,9 @@
-import { ModalContainer } from './Modal.styles'
+import { Container } from './Modal.styles'
 
 const Modal = ({ children }) => (
-  <ModalContainer>
+  <Container>
     {children}
-  </ModalContainer>
+  </Container>
 )
 
 export default Modal;

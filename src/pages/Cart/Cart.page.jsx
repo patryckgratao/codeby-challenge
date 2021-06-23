@@ -3,11 +3,11 @@ import { getListUnderTen } from "../../services/shopping";
 
 import Modal from "../../components/Modal/Modal.component";
 import List from "../../components/List/List.component";
-
+import TotalAmount from "../../components/TotalAmount/TotalAmount.component";
 import FreeShippingMessage from "../../components/FreeShippingMessage/FreeShippingMessage.component";
 import Button from "../../components/Button/Button.component";
 
-import { Container, TotalContainer, ButtonContainer } from "./Cart.styles";
+import { Container } from "./Cart.styles";
 
 const Cart = () => {
   const [dataFromServer, setDataFromServer] = useState({});
@@ -20,7 +20,8 @@ const Cart = () => {
       ? totalOriginalPrice - totalDiscounts
       : 0;
 
-      console.log(items)
+  const showFreeShippingMessage =
+    totalAmount && totalAmount > 10 ? <FreeShippingMessage /> : "";
 
   useEffect(() => {
     async function fetchListUnderTen() {
@@ -40,17 +41,9 @@ const Cart = () => {
       <Modal>
         <h3>Meu carrinho</h3>
         <List items={items} />
-
-        <TotalContainer>
-          <span>Total</span>
-          <span>R$ {totalAmount}</span>
-        </TotalContainer>
-
-
-        <FreeShippingMessage />
-        <ButtonContainer>
-          <Button text="Finalizar Compra" />
-        </ButtonContainer>
+        <TotalAmount amount={totalAmount} />
+        {showFreeShippingMessage}
+        <Button text="Finalizar Compra" />
       </Modal>
     </Container>
   );
