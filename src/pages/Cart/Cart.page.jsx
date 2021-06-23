@@ -18,7 +18,7 @@ const Cart = () => {
 
   const totalAmount =
     totalDiscounts && totalOriginalPrice
-      ? totalOriginalPrice - totalDiscounts
+      ? parseFloat(totalOriginalPrice - totalDiscounts).toFixed(2)
       : 0;
 
   const showFreeShippingMessage =

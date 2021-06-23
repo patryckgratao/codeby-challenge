@@ -17,10 +17,10 @@
         "assemblies": [],
         "priceValidUntil": "2020-12-01T02:30:00Z",
         "tax": 0,
-        "price": 303,
-        "listPrice": 303,
+        "price": 3.03,
+        "listPrice": 3.03,
         "manualPrice": null,
-        "sellingPrice": 273,
+        "sellingPrice": 2.73,
         "rewardValue": 0,
         "isGift": false,
         "additionalInfo": {
@@ -72,10 +72,10 @@
         "assemblies": [],
         "priceValidUntil": "2020-12-01T02:30:00Z",
         "tax": 0,
-        "price": 123,
-        "listPrice": 123,
+        "price": 1.23,
+        "listPrice": 1.23,
         "manualPrice": null,
-        "sellingPrice": 111,
+        "sellingPrice": 1.11,
         "rewardValue": 0,
         "isGift": false,
         "additionalInfo": {
@@ -127,10 +127,10 @@
         "assemblies": [],
         "priceValidUntil": "2020-12-01T02:30:00Z",
         "tax": 0,
-        "price": 303,
-        "listPrice": 303,
+        "price": 3.03,
+        "listPrice": 3.03,
         "manualPrice": null,
-        "sellingPrice": 273,
+        "sellingPrice": 2.73,
         "rewardValue": 0,
         "isGift": false,
         "additionalInfo": {
@@ -182,10 +182,10 @@
         "assemblies": [],
         "priceValidUntil": "2020-12-01T02:30:00Z",
         "tax": 0,
-        "price": 303,
-        "listPrice": 303,
+        "price": 3.03,
+        "listPrice": 3.03,
         "manualPrice": null,
-        "sellingPrice": 273,
+        "sellingPrice": 2.73,
         "rewardValue": 0,
         "isGift": false,
         "additionalInfo": {
@@ -237,10 +237,10 @@
         "assemblies": [],
         "priceValidUntil": "2020-12-01T02:30:00Z",
         "tax": 0,
-        "price": 110,
-        "listPrice": 110,
+        "price": 1.1,
+        "listPrice": 1.1,
         "manualPrice": null,
-        "sellingPrice": 99,
+        "sellingPrice": 0.99,
         "rewardValue": 0,
         "isGift": false,
         "additionalInfo": {
@@ -292,10 +292,10 @@
         "assemblies": [],
         "priceValidUntil": "2020-12-01T02:30:00Z",
         "tax": 0,
-        "price": 303,
-        "listPrice": 303,
+        "price": 3.03,
+        "listPrice": 3.03,
         "manualPrice": null,
-        "sellingPrice": 273,
+        "sellingPrice": 2.73,
         "rewardValue": 0,
         "isGift": false,
         "additionalInfo": {
@@ -347,10 +347,10 @@
         "assemblies": [],
         "priceValidUntil": "2020-12-01T02:30:00Z",
         "tax": 0,
-        "price": 110,
-        "listPrice": 110,
+        "price": 1.1,
+        "listPrice": 1.1,
         "manualPrice": null,
-        "sellingPrice": 99,
+        "sellingPrice": 0.99,
         "rewardValue": 0,
         "isGift": false,
         "additionalInfo": {
@@ -389,8 +389,8 @@
       }
     ],
     "totalizers": [
-      { "id": "Items", "name": "Total dos Itens", "value": 1555 },
-      { "id": "Discounts", "name": "Total dos Descontos", "value": -154 }
+      { "id": "Items", "name": "Total dos Itens", "value": 15.55 },
+      { "id": "Discounts", "name": "Total dos Descontos", "value": -1.54 }
     ],
     "itemMetadata": {
       "items": [
