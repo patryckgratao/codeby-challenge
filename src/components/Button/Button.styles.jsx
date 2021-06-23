@@ -22,4 +22,9 @@ export const ButtonText = styled.span`
   font-size: 1.2rem;
   font-weight: bold;
   font-family: "Poppins";
+
+  
+  @media (max-width: 1024px) {
+    font-size: 0.85rem;
+  }
 `;

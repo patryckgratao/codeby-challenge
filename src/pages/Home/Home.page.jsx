@@ -75,13 +75,12 @@ const Home = () => {
             </ul>
 
             <span>
-              coded by:{" "}
+              coded with 💗 by:{" "}
               <a
                 href="https://api.whatsapp.com/send?phone=5562996880462"
                 target="_blank"
                 rel="noopener noreferrer"
               >
-                {" "}
                 Patryck Gratão
               </a>
             </span>

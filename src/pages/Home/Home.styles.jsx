@@ -12,6 +12,12 @@ export const Container = styled.div`
       margin: 1rem 0;
     }
 
+    & span:last-child {
+      margin-top: 3rem;
+      font-size: 0.9rem;
+      color: #333
+    }
+
     & ul {
       list-style: none;
 

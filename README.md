@@ -78,7 +78,7 @@ $ yarn start
 
 ---
 
-Made with :heartpulse: by [Patryck Gratão](https://api.whatsapp.com/send?phone=5562996880462).
+Feito com 💗 por [Patryck Gratão](https://api.whatsapp.com/send?phone=5562996880462).
 
 [nodejs]: https://nodejs.org/
 [yarn]: https://yarnpkg.com/
