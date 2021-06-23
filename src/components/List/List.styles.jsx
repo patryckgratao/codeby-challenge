@@ -4,7 +4,7 @@ export const Container = styled.div`
   display: flex;
   flex-direction: column;
   padding: 0.4rem 0.8rem;
-  /* max-height: 100rem; */
+  max-height: 100%;
   overflow-y: auto;
   border-bottom: 2px solid #cacaca;
 `;
