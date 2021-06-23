@@ -20,7 +20,6 @@ const Home = () => {
     },
   };
 
-  console.log(dataUnderTen, dataOverTen);
   useEffect(() => {
     async function fetchLists() {
       try {
@@ -74,6 +73,18 @@ const Home = () => {
                 </Link>
               </li>
             </ul>
+
+            <span>
+              coded by:{" "}
+              <a
+                href="https://api.whatsapp.com/send?phone=5562996880462"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                {" "}
+                Patryck Gratão
+              </a>
+            </span>
           </>
         )}
       </Modal>
