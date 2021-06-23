@@ -13,11 +13,16 @@
   <a href="#information_source-Como-Utilizar">Como Utilizar</a>&nbsp;&nbsp;&nbsp;
 </p>
 
-![Home Screenshot](.github/home.png)
+<div align="center">
 
-![Add Movie Screenshot](.github/addMovie.png)
+  ![Home Screenshot](./github/home.JPG)
 
-![Watch Movie Screenshot](.github/detailedMovie.png)
+  ![Free Shippment Screenshot](./github/free-ship.JPG)
+
+  ![Pay Shippment Screenshot](./github/pay-ship.JPG)
+
+</div>
+
 
 ## :rocket: Tecnologias
 

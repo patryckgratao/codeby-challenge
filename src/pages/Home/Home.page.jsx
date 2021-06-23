@@ -59,7 +59,7 @@ const Home = () => {
                     state: { data: dataOverTen },
                   }}
                 >
-                  ✔️ Página com Frete Grátis
+                  😍 Página com Frete Grátis
                 </Link>
               </li>
               <li>
@@ -69,7 +69,7 @@ const Home = () => {
                     state: { data: dataUnderTen },
                   }}
                 >
-                  ❌ Página sem Frete Grátis
+                  😭 Página sem Frete Grátis
                 </Link>
               </li>
             </ul>

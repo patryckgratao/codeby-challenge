@@ -15,7 +15,16 @@ export const Container = styled.div`
     & span:last-child {
       margin-top: 3rem;
       font-size: 0.9rem;
-      color: #333
+      color: #333;
+
+      & a {
+        color: #3b74f2;
+        text-decoration: none;
+
+        &:hover {
+          opacity: 0.8;
+        }
+      }
     }
 
     & ul {
