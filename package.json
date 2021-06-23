@@ -2,6 +2,7 @@
   "name": "codeby",
   "version": "0.1.0",
   "private": true,
+  "homepage": "https://patryckgratao.github.io/codeby-challenge",
   "dependencies": {
     "@testing-library/jest-dom": "^5.11.4",
     "@testing-library/react": "^11.1.0",
@@ -20,7 +21,9 @@
     "build": "react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject",
-    "server": "json-server --watch db.json --port 3333"
+    "server": "json-server --watch db.json --port 3333",
+    "predeploy": "yarn build",
+    "deploy": "gh-pages -d build"
   },
   "eslintConfig": {
     "extends": [
@@ -41,6 +44,7 @@
     ]
   },
   "devDependencies": {
+    "gh-pages": "^3.2.3",
     "prettier": "2.3.1"
   }
 }
