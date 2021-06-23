@@ -30,7 +30,4 @@ const getListOverTen = async () => {
   }
 };
 
-export {
-  getListUnderTen,
-  getListOverTen,
-};
+export { getListUnderTen, getListOverTen };

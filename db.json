@@ -499,10 +499,10 @@
         "assemblies": [],
         "priceValidUntil": "2020-12-01T02:30:00Z",
         "tax": 0,
-        "price": 303,
-        "listPrice": 303,
+        "price": 3.03,
+        "listPrice": 3.03,
         "manualPrice": null,
-        "sellingPrice": 273,
+        "sellingPrice": 2.73,
         "rewardValue": 0,
         "isGift": false,
         "additionalInfo": {
@@ -554,10 +554,10 @@
         "assemblies": [],
         "priceValidUntil": "2020-12-01T02:30:00Z",
         "tax": 0,
-        "price": 123,
-        "listPrice": 123,
+        "price": 1.23,
+        "listPrice": 1.23,
         "manualPrice": null,
-        "sellingPrice": 111,
+        "sellingPrice": 1.11,
         "rewardValue": 0,
         "isGift": false,
         "additionalInfo": {
@@ -609,10 +609,10 @@
         "assemblies": [],
         "priceValidUntil": "2020-12-01T02:30:00Z",
         "tax": 0,
-        "price": 303,
-        "listPrice": 303,
+        "price": 3.03,
+        "listPrice": 3.03,
         "manualPrice": null,
-        "sellingPrice": 273,
+        "sellingPrice": 2.73,
         "rewardValue": 0,
         "isGift": false,
         "additionalInfo": {
@@ -651,8 +651,8 @@
       }
     ],
     "totalizers": [
-      { "id": "Items", "name": "Total dos Itens", "value": 729 },
-      { "id": "Discounts", "name": "Total dos Descontos", "value": -72 }
+      { "id": "Items", "name": "Total dos Itens", "value": 7.29 },
+      { "id": "Discounts", "name": "Total dos Descontos", "value": -0.72 }
     ],
     "itemMetadata": {
       "items": [

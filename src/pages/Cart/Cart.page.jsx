@@ -9,7 +9,7 @@ import Button from "../../components/Button/Button.component";
 
 import { Container } from "./Cart.styles";
 
-const Cart = () => {
+const Cart = (props) => {
   const [dataFromServer, setDataFromServer] = useState({});
   const { items, totalizers } = dataFromServer;
   const totalOriginalPrice = totalizers && Math.abs(totalizers[0]?.value);
