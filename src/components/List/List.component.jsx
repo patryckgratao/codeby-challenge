@@ -16,19 +16,21 @@ const List = ({ items }) => {
     return <ErrorMessage>Nenhum item registrado.</ErrorMessage>;
   }
 
-  const itemsFormatted = items?.map((item) => (
-    <Item key={item.id}>
-      <ImageContainer>
-        <img src={item.imageUrl} alt={item.name} />
-      </ImageContainer>
+  const itemsFormatted = items?.map(
+    ({ id, name, imageUrl, price, sellingPrice }) => (
+      <Item key={id}>
+        <ImageContainer>
+          <img src={imageUrl} alt={name} />
+        </ImageContainer>
 
-      <DetailsContainer>
-        <ChocoName>{item.name}</ChocoName>
-        <OriginalPrice>R$ {item.price}</OriginalPrice>
-        <NewPrice>R$ {item.sellingPrice}</NewPrice>
-      </DetailsContainer>
-    </Item>
-  ));
+        <DetailsContainer>
+          <ChocoName>{name}</ChocoName>
+          <OriginalPrice>R$ {price}</OriginalPrice>
+          <NewPrice>R$ {sellingPrice}</NewPrice>
+        </DetailsContainer>
+      </Item>
+    )
+  );
   return <Container>{itemsFormatted}</Container>;
 };
 
