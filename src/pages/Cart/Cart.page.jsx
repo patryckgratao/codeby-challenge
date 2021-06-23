@@ -1,70 +1,51 @@
-import React from "react";
+import React, { useState, useEffect } from "react";
+import { getListUnderTen } from "../../services/shopping";
 
-import Modal from '../../components/Modal/Modal.component';
-import Button from "../../components/Button/Button.component";
+import Modal from "../../components/Modal/Modal.component";
+import List from "../../components/List/List.component";
+
 import FreeShippingMessage from "../../components/FreeShippingMessage/FreeShippingMessage.component";
+import Button from "../../components/Button/Button.component";
 
-import {
-  Container,
-  List,
-  Item,
-  ImageContainer,
-  DetailsContainer,
-  ChocoName,
-  OriginalPrice,
-  NewPrice,
-  TotalContainer,
-  ButtonContainer
-} from "./Cart.styles";
+import { Container, TotalContainer, ButtonContainer } from "./Cart.styles";
 
 const Cart = () => {
+  const [dataFromServer, setDataFromServer] = useState({});
+  const { items, totalizers } = dataFromServer;
+  const totalOriginalPrice = totalizers && Math.abs(totalizers[0]?.value);
+  const totalDiscounts = totalizers && Math.abs(totalizers[1]?.value);
+
+  const totalAmount =
+    totalDiscounts && totalOriginalPrice
+      ? totalOriginalPrice - totalDiscounts
+      : 0;
+
+      console.log(items)
+
+  useEffect(() => {
+    async function fetchListUnderTen() {
+      try {
+        const result = await getListUnderTen();
+        setDataFromServer(result);
+      } catch (error) {
+        console.log("error => ", error);
+      }
+    }
+
+    fetchListUnderTen();
+  }, []);
+
   return (
     <Container>
       <Modal>
         <h3>Meu carrinho</h3>
-        <List>
-          <Item>
-            <ImageContainer>
-              <img src="http://codeby.vteximg.com.br/arquivos/ids/159959-800-1029/truffon-meio-amargo.png?v=636930938547630000" />
-            </ImageContainer>
-
-            <DetailsContainer>
-              <ChocoName>Trufa de Morango</ChocoName>
-              <OriginalPrice>R$ 123</OriginalPrice>
-              <NewPrice>R$ 1,11</NewPrice>
-            </DetailsContainer>
-          </Item>
-
-          <Item>
-            <ImageContainer>
-              <img src="" />
-            </ImageContainer>
-
-            <DetailsContainer>
-              <ChocoName>Trufa de Morango gostosonq daksdkasd</ChocoName>
-              <OriginalPrice>R$ 123</OriginalPrice>
-              <NewPrice>R$ 1,11</NewPrice>
-            </DetailsContainer>
-          </Item>
-
-          <Item>
-            <ImageContainer>
-              <img src="" />
-            </ImageContainer>
-
-            <DetailsContainer>
-              <ChocoName>Trufa de Morango</ChocoName>
-              <OriginalPrice>R$ 123</OriginalPrice>
-              <NewPrice>R$ 1,11</NewPrice>
-            </DetailsContainer>
-          </Item>
-          
-        </List>
+        <List items={items} />
 
         <TotalContainer>
           <span>Total</span>
-          <span>R$ 13,31</span>
+          <span>R$ {totalAmount}</span>
         </TotalContainer>
+
 
         <FreeShippingMessage />
         <ButtonContainer>

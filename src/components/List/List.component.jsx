@@ -11,19 +11,24 @@ import {
 } from "./List.styles";
 
 const List = ({ items }) => {
-  const itemsFormatted = items?.map((item) => (
-    <Item key={item.id}>
-      <ImageContainer>
-        <img src={item.imageUrl} alt={item.name} />
-      </ImageContainer>
+  let itemsFormatted;
+  if (items) {
+    itemsFormatted = items?.map((item) => (
+      <Item key={item.id}>
+        <ImageContainer>
+          <img src={item.imageUrl} alt={item.name} />
+        </ImageContainer>
 
-      <DetailsContainer>
-        <ChocoName>{item.name}</ChocoName>
-        <OriginalPrice>R$ {item.price}</OriginalPrice>
-        <NewPrice>R$ {item.sellingPrice}</NewPrice>
-      </DetailsContainer>
-    </Item>
-  ));
+        <DetailsContainer>
+          <ChocoName>{item.name}</ChocoName>
+          <OriginalPrice>R$ {item.price}</OriginalPrice>
+          <NewPrice>R$ {item.sellingPrice}</NewPrice>
+        </DetailsContainer>
+      </Item>
+    ));
+  } else {
+    itemsFormatted = "Nenhum item registrado.";
+  }
 
   return <Container>{itemsFormatted}</Container>;
 };
