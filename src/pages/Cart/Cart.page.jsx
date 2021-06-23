@@ -12,6 +12,10 @@ const Cart = () => {
   const location = useLocation();
   const data = location?.state?.data;
 
+  if (!data) {
+    window.location.assign("/");
+  }
+
   const { items, totalizers } = data;
   const totalOriginalPrice = totalizers && Math.abs(totalizers[0]?.value);
   const totalDiscounts = totalizers && Math.abs(totalizers[1]?.value);
