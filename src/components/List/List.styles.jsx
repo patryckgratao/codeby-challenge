@@ -4,7 +4,7 @@ export const Container = styled.div`
   display: flex;
   flex-direction: column;
   padding: 0.4rem 0.8rem;
-  max-height: 100%;
+  max-height: 50vh;
   overflow-y: auto;
   border-bottom: 2px solid #cacaca;
 `;
@@ -36,6 +36,7 @@ export const ChocoName = styled.span`
   display: block;
   font-weight: bold;
   margin-bottom: 0.5rem;
+  text-transform: capitalize;
 `;
 
 export const OriginalPrice = styled.div`

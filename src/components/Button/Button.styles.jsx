@@ -8,7 +8,7 @@ export const Container = styled.div`
 export const FullButton = styled.div`
   margin-top: 1.5rem;
   background: ${(props) => props.color || "#3B74F2"};
-  padding: 0.7rem 0;
+  padding: 1rem 0;
   border-radius: 8px;
   outline: none;
   border: none;
@@ -23,7 +23,7 @@ export const ButtonText = styled.span`
   font-weight: bold;
   font-family: "Poppins";
 
-  
+
   @media (max-width: 1024px) {
     font-size: 0.85rem;
   }

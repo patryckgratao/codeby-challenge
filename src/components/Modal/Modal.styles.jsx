@@ -4,8 +4,7 @@ export const Container = styled.div`
   display: flex;
   flex-direction: column;
   background: #fff;
-  width: 30%;
-  /* height: 900px; */
+  width: 25%;
   border-radius: 10px;
 
   & h3 {
