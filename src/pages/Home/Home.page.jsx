@@ -54,10 +54,24 @@ const Home = () => {
             <span>Menu de opções</span>
             <ul>
               <li>
-                <Link to="cart">✔️ Página com Frete Grátis</Link>
+                <Link
+                  to={{
+                    pathname: "/cart",
+                    state: { data: dataOverTen },
+                  }}
+                >
+                  ✔️ Página com Frete Grátis
+                </Link>
               </li>
               <li>
-                <Link to="aloha">❌ Página sem Frete Grátis</Link>
+                <Link
+                  to={{
+                    pathname: "/cart",
+                    state: { data: dataUnderTen },
+                  }}
+                >
+                  ❌ Página sem Frete Grátis
+                </Link>
               </li>
             </ul>
           </>

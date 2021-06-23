@@ -1,17 +1,18 @@
 import React, { useState, useEffect } from "react";
-import { getListUnderTen } from "../../services/shopping";
+import { useLocation } from "react-router-dom";
 
 import Modal from "../../components/Modal/Modal.component";
 import List from "../../components/List/List.component";
 import TotalAmount from "../../components/TotalAmount/TotalAmount.component";
 import FreeShippingMessage from "../../components/FreeShippingMessage/FreeShippingMessage.component";
 import Button from "../../components/Button/Button.component";
-
 import { Container } from "./Cart.styles";
 
-const Cart = (props) => {
-  const [dataFromServer, setDataFromServer] = useState({});
-  const { items, totalizers } = dataFromServer;
+const Cart = () => {
+  const location = useLocation();
+  const data = location?.state?.data;
+
+  const { items, totalizers } = data;
   const totalOriginalPrice = totalizers && Math.abs(totalizers[0]?.value);
   const totalDiscounts = totalizers && Math.abs(totalizers[1]?.value);
 
@@ -22,19 +23,6 @@ const Cart = (props) => {
 
   const showFreeShippingMessage =
     totalAmount && totalAmount > 10 ? <FreeShippingMessage /> : "";
-
-  useEffect(() => {
-    async function fetchListUnderTen() {
-      try {
-        const result = await getListUnderTen();
-        setDataFromServer(result);
-      } catch (error) {
-        console.log("error => ", error);
-      }
-    }
-
-    fetchListUnderTen();
-  }, []);
 
   return (
     <Container>
